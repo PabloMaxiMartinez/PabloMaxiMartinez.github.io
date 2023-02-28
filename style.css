@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #fbfbf8ba;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/*HEADER*/
+.banner {
+    width: 100%;
+    height: 18em;
+    border-bottom: solid 0.3em black;
+}
+
+
+/*MAIN*/
+/*Botones, nombre, foto, profesión, perfil profesional*/
+.contenedor-boton {
+    display: flex;
+    position: absolute;
+    width: 3.2em;
+    height: 1.5em;
+    border: solid 0.1em black;
+    border-radius: 2em;
+    font-size: 1.5em;
+    align-items: center;
+    margin: 0.8em 5em;
+}
+
+
+.contenedor-boton p {
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-left: 0.4em;
+}
+
+
+#tecla {
+    display: flex;
+    position: absolute;
+    border: solid 0.1em rgb(8, 17, 14);
+    background-color: rgb(89, 209, 169);
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+
+.dark {
+    display: flex;
+    position: absolute;
+    margin: 5em 10em;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+
+.principal {
+    display: inline-flex;
+}
+
+
+.botones {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 7.5em 0 0 5.5em;
+    width: 20%;
+}
+
+
+.botones button {
+    display: flex;
+    width: 8.3em;
+    height: 2.3em;
+    border: none;
+    border-radius: 2em;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+    font-size: 1.05em;  
+    background-color: #f0cc97;
+}
+
+
+button:hover {
+	background-color: #e4a443;
+	transform: scale(1.1);
+    transition: 500ms all;
+}
+
+
+.botones a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.nombre-foto-profesion {
+    display: inline-flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    margin: 1em 5em 0 0;
+}
+
+
+.nombre {
+    font-family: 'Teko', sans-serif;
+    margin-right: 0.25em;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+
+.foto {
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    border: 0.3em solid black;
+}
+
+
+.profesion {
+    font-family: 'Teko', sans-serif;
+    margin-left: 0.3em;
+    margin-top: 0.25em;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.acerca-de {
+    display: inline-flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 1em;
+    margin-top: 1.5em; 
+}
+
+
+.acerca-de div {
+    border-radius: 1em;
+    background-image: linear-gradient(to bottom right, #f1e7d7, #f0b04f );
+    margin-right: 5.5em;
+}
+
+
+.acerca-de h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.3em;
+    font-weight: bold;
+    padding-left: 2.5em;
+}
+
+
+.acerca-de p {
+    font-size: 1.2em;
+    padding: 1.2em 2em;
+    line-height: 1.3em; 
+}
+
+
+/*Títulos de todas las secciones*/
+.subtitulos {
+    display: flex;
+    align-items: center;
+    margin: 11em 6em 0;
+}
+
+
+.linea-decorativa {
+    display: inline-flex;
+    height: 0.6em;
+    flex: 1;
+    background-image: linear-gradient(to right, #d1ceca, #878992 );
+}
+
+
+.subtitulos h3 {
+    display: inline-flex;
+    justify-content: center;
+    font-family: 'Teko', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #878992, #d1ceca );
+    flex: 1;
+    padding: 0.3em;
+    border-radius: 45%;
+}
+
+/*Sección datos personales*/
+.datos-personales {
+    display: flex;
+    flex-direction: row;
+    line-height: 3em;
+    border-radius: 1em;
+    background-image: linear-gradient(to bottom right, #f1e7d7, #f0b04f );
+    margin: 4em 6em;
+}
+
+
+.iconos {
+	width: 1.7em;
+	margin: 2em 0 1.1em 18.5em;
+}
+
+
+.items {
+    margin: 1.5em 6em 1.5em 1em;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+
+.datos-items {
+    margin: 1.5em 0;
+    font-size: 1.3em;   
+}
+
+
+.datos-items a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Sección experiencia*/
+.experiencia {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    border-radius: 1em;
+    background-image: linear-gradient(to bottom right, #f1e7d7, #f0b04f );
+    margin: 4em 5em;
+    padding: 1em 2em 2.5em;
+}
+
+
+.experiencia h5::before {
+    content: "✰";  
+}
+
+
+h5 {
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+
+h6 {
+    font-weight: bold;
+    margin: 0 0 1em 1em;
+}
+
+
+.experiencia p {
+    margin: 0 0 0.5em 1em;
+}
+
+
+/*Sección habilidades*/
+.habilidades {
+    display: flex;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    border-radius: 1em;
+    background-image: linear-gradient(to bottom right, #f1e7d7, #f0b04f );
+    margin: 4em 5em;
+    padding: 1em 2em 2.5em;
+}
+
+
+.habilidades div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center
+}  
+
+
+.habilidades h5::before {
+    content: "☑";
+}
+
+
+.habilidades li {
+    padding-left: 1.1em;
+    margin-top: 0.5em;
+}
+
+
+/*Botón subir*/
+#subir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: #e79e3f;
+    position: fixed;
+    right: 1em;
+    bottom: 11em;
+    cursor: pointer;
+    transform: scale(0);
+}
+
+
+#subir i {
+    font-size: 2.5em;
+}
+
+
+/*FOOTER*/
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border-top: solid 0.3em black;
+    background-color: #878992;
+    height: 10em;
+    margin-top: 2em;
+    color: beige;
+    font-weight: bold;
+}
+
+
+.contactos {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-around;
+    padding-top: 1.5em;
+    font-size: 1.1em;
+}
+
+
+.contactos i {
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: rgb(6, 148, 196);
+    font-size: 1.5em;
+    padding: 0.3em;
+}
+
+
+.contactos p {
+     display: inline;
+}
+
+
+.contactos a {
+    text-decoration: none;
+    color: white;
+    margin-right: 3em
+}
+
+
+.contactos a:hover {
+    text-decoration: underline;
+}
+
+
+.copyright {
+	align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75em;
+    line-height: 1.7em;
+    padding-top: 2em;
+    color: black;
+}
