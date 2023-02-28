@@ -1,5 +1,3 @@
-console.log("Inicio");
-
 // BOTÓN DARK MODE
 function resaltarBotonDark() {
     obtenerTecla.style.backgroundColor = "rgb(30, 163, 119)";

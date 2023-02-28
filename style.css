@@ -228,6 +228,11 @@ button:hover {
 }
 
 
+.datos-items a:hover {
+    text-decoration: underline;
+}
+
+
 /*Sección experiencia*/
 .experiencia {
     font-size: 1.2em;
